@@ -1,0 +1,16 @@
+ <header>
+             	    #<button type="object" name="make_open" attrs="{'invisible' :[('status', '!=', 'draft')]}"  string="send" class="btn-primary" groups="website_support.support_manager" />
+                    <button type="object"  name="make_open"  attrs="{'invisible' :[('status', '!=', 'draft')]}"  string="Open" class="btn-primary" groups="website_support.support_manager" />
+                    
+		    <button type="object"  name="make_confirmed"  attrs="{'invisible' :[('status', '!=', 'open')]}"  string="Confirmed" class="btn-primary" groups="website_support.support_manager" />
+                    <button type="object"  name="make_rejected"  attrs="{'invisible' :[('status', '!=', 'open')]}"  string="Rejected" class="btn-primary" groups="website_support.support_manager" />
+		    
+		    <button name="make_loading" type="object" attrs="{'invisible' :[('status', '!=', 'confirmed')]}"  string="In pogress" class="btn-primary" groups="website_support.support_manager"/>                
+                    
+		    <button type="object" name="make_resolved" attrs="{'invisible' :[('status', '!=', 'awaiting_approval' )]}" class="btn-primary" string="Accepter" groups="website_support.support_staff"/>
+		    <button type="object" name="make_approval_rejected" attrs="{'invisible' :[('status', '!=', 'awaiting_approval' )]}" class="btn-primary" string="Rejeter" groups="website_support.support_staff"/>
+		    
+		    <button type="object" name="make_done" attrs="{'invisible' :[('status', '!=', 'resolved' )]}" class="btn-primary" string="Resolved" groups="website_support.support_staff"/>
+
+                    <field name="status" widget="statusbar" statusbar_visible="draft,open,loading,awaiting_approval,done" />
+</header>
