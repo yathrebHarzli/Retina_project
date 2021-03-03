@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite>
+<testcase name="testcase0-success" classname="com.intland.testcases" time="2.382">
+</testcase>
+<testcase name="testcase1-fail" classname="com.intland.testcases" time="2.382">
+ <failure/>
+</testcase>
+<testcase name="testcase2-error" classname="com.intland.testcases" time="2.382">
+ <error/>
+</testcase>
+<testcase name="testcase3-skipped" classname="com.intland.testcases" time="2.382">
+ <skipped/>
+</testcase>
+<testcase name="testcase4-rerun-fail" classname="com.intland.testcases" time="2.382">
+ <rerunFailure/>
+</testcase>
+<testcase name="testcase5-other" classname="com.intland.testcases" time="2.382">
+ <other/>
+</testcase>
+</testsuite>
